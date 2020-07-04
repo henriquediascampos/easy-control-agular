@@ -23,7 +23,23 @@ export class ProductsService {
     })
   }
 
-  save(Product: Product): Observable<Product> {
+  create(Product: Product): Observable<Product> {
     return this.http.post<Product>(this.baseUrl, Product);
   }
+
+  read(): Observable<Product[]> {
+    return this.http.get<Product[]>(this.baseUrl);
+  }
+
+  readById(id: number): Observable<Product> {
+    return this.http.get<Product>(`${this.baseUrl}/${id}`);
+  }
+
+  update(product: Product): Observable<Product> {
+    return this.http.put<Product>(this.baseUrl, product);
+  }
+
+  // delete(product: Product): Observable<Product> {
+    // return this.http.delete<Product>(this.baseUrl, {['param': product, 'responseType': 'arraybuffer']});
+  // }
 }

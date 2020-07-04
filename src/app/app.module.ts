@@ -23,6 +23,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatInputModule } from "@angular/material/input";
+import { ProductsReadComponent } from './components/products/products-read/products-read.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +32,8 @@ import { MatInputModule } from "@angular/material/input";
     NavComponent,
     HomeComponent,
     ProductsComponent,
-    ProductsCreateComponent
+    ProductsCreateComponent,
+    ProductsReadComponent
   ],
   imports: [
     BrowserModule,

@@ -19,6 +19,16 @@
       "name": "calculadora",
       "price": 12.98,
       "id": 4
+    },
+    {
+      "name": "veio do form",
+      "price": "9.99",
+      "id": 5
+    },
+    {
+      "name": "july pata",
+      "price": "99.99",
+      "id": 6
     }
   ]
 }

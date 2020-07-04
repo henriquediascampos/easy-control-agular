@@ -126,5 +126,8 @@
       }
     }
   },
-  "defaultProject": "easy-control-angular"
+  "defaultProject": "easy-control-angular",
+  "cli": {
+    "analytics": "0c68c381-390e-4a7b-800a-417125e3b955"
+  }
 }

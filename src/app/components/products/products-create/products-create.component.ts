@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductsCreateComponent implements OnInit {
 
-  private product: Product = {
+  product: Product = {
     name: '',
     price: null
   };
@@ -19,8 +19,8 @@ export class ProductsCreateComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  save(): void {
-    this.productsService.save(this.product)
+  create(): void {
+    this.productsService.create(this.product)
       .subscribe(() => {
         this.productsService.showMensagem('patos de borrachas');
         this.router.navigate(['products']);
