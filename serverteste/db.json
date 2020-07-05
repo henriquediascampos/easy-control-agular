@@ -29,6 +29,26 @@
       "name": "july pata",
       "price": "99.99",
       "id": 6
+    },
+    {
+      "name": "teste",
+      "price": "12312.23",
+      "id": 7
+    },
+    {
+      "name": "kldm'23'",
+      "price": "342",
+      "id": 8
+    },
+    {
+      "name": "teste",
+      "price": "1",
+      "id": 9
+    },
+    {
+      "name": "teste",
+      "price": "32",
+      "id": 10
     }
   ]
 }
