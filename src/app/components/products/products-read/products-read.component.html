@@ -6,7 +6,7 @@
     <mat-card-title class="card_content" >{{product.name}}</mat-card-title>
     <mat-card-subtitle class="card_content" >{{product.price}}</mat-card-subtitle>
     <mat-card-actions class="card_content card-actions" >
-      <i class="material-icons" (click)=update(product)>edit</i>
+      <a routerLink="/products/update/{{ product.id }}"><i class="material-icons">edit</i></a>
       <i class="material-icons" (click)=delete(product.id)>delete</i>
     </mat-card-actions>
   </mat-card>

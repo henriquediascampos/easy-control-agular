@@ -9,17 +9,24 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router';
   styleUrls: ['./product-update.component.sass']
 })
 export class ProductUpdateComponent implements OnInit {
-  product: Product;
+  product: Product = {
+    name: '',
+    price: null
+  };
 
-  constructor(private productsService: ProductsService, private router: ActivatedRoute) { }
+  constructor(
+    private productsService: ProductsService,
+    private router: Router,
+    private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.router.queryParams.subscribe((product: Product) => {
-      this.product = product;
-    });
+    const id = this.route.snapshot.paramMap.get('id');
+    this.productsService.readById(id)
+      .subscribe(product => this.product = product);
   }
 
   update(): void {
-
+    this.productsService.update(this.product)
+      .subscribe( () => this.router.navigate(['products']));
   }
 }

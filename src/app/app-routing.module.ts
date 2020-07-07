@@ -21,7 +21,7 @@ const routes: Routes = [
     component: ProductsCreateComponent
   },
   {
-    path: "products/update",
+    path: "products/update/:id",
     component: ProductUpdateComponent
   }
 ];
