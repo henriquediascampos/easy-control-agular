@@ -1,3 +1,4 @@
+import { ThemeService } from './../../../services/theme/theme.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+
+  constructor(private themeService: ThemeService) { }
 
   ngOnInit(): void {
+    // console.log(document.querySelector('body'));
   }
 
+  changeTheme(theme: string): void {
+    // console.log(this.themeService.getCurrenteTheme());
+    this.themeService.changeTheme(theme);
+  }
 }

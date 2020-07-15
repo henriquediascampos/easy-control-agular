@@ -1,7 +1,10 @@
-@charset 'utf-8';
+@import './app/style/cores.scss';
+@import './app/style/flex.scss';
+@import './app/style/theme-orange-dark.scss';
+@import './app/style/theme-orange-light.scss';
 
 .green {
-  background-color: rgba(0, 221, 55, 0.726);
+  // background-color: rgba(0, 221, 55, 0.726);
   font-weight: 500;
   color: #ffffff;
   button {
@@ -9,6 +12,8 @@
   }
 }
 
+.margin-8px {
+  margin-right: 8px;
+}
 
 
-//   // font-size: 10em

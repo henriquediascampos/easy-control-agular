@@ -1,0 +1,39 @@
+<mat-tab-group>
+<nav mat-tab-nav-bar >
+  <a mat-tab-link>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <i class="material-icons margin-8px">bar_chart</i>
+        Balanço
+      </ng-template>
+      <app-movement></app-movement>
+    </mat-tab>
+  </a>
+  <a mat-tab-link>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <i class="material-icons margin-8px">input</i>
+        Entrada
+      </ng-template>
+      <app-movement-input></app-movement-input>
+    </mat-tab>
+  </a>
+  <a mat-tab-link>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <i class="material-icons margin-8px">transit_enterexit</i>
+        Saída
+      </ng-template>
+      <app-movement-output></app-movement-output>
+    </mat-tab>
+  </a>
+</nav>
+</mat-tab-group>
+
+<!--
+<nav mat-tab-nav-bar >
+  <a mat-tab-link><i class="material-icons margin-8px">bar_chart</i></a>
+  <a mat-tab-link><i class="material-icons margin-8px">input</i></a>
+  <a mat-tab-link><i class="material-icons margin-8px">transit_enterexit</i></a>
+</nav>
+ -->

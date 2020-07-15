@@ -1,18 +1,30 @@
-<mat-toolbar class="flex-cascade header mat-elevation-z4">
-  <div>
-    <div>
-      <a routerLink="/">
-        <img src="assets/biblia.png" alt="logo" class="logo">
-      </a>
+<mat-toolbar class="flex-cascade header mat-elevation-z8 primary-light">
+    <div id="teste">
+      <div>
+        <a routerLink="/" >
+          <img src="assets/test.svg" alt="logo" class="logo">
+        </a>
+      </div>
+      <div class="menu">
+        <i class="material-icons">menu</i>
+      </div>
     </div>
-    <div class="menu">
-      <i class="material-icons">menu</i>
-    </div>
-  </div>
-  <span>
-    <a>
-      Aplicação crud
-      <i class="teste material-icons">home</i>
-    </a>
-  </span>
+    <span>
+      <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+        <i class="material-icons">format_color_fill</i>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="changeTheme('theme-white')">
+          <i class="material-icons">star_border</i>
+          <span>Redial</span>
+        </button>
+        <button mat-menu-item (click)="changeTheme('theme-dark')">
+          <i class="material-icons">star_half</i>
+          <span>Check voice mail</span>
+        </button>
+        <button mat-menu-item>
+          <span><i class="material-icons">star</i> Disable alerts</span>
+        </button>
+      </mat-menu>
+    </span>
 </mat-toolbar>

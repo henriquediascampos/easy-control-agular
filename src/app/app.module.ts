@@ -14,6 +14,10 @@ import { NavComponent } from './components/tamplate/nav/nav.component';
 import { ProductsComponent } from './views/products/products.component';
 import { ProductsCreateComponent } from './components/products/products-create/products-create.component';
 import { HomeComponent } from './views/home/home.component';
+import { BalanceComponent } from './views/balance/balance.component';
+import { ProductsReadComponent } from './components/products/products-read/products-read.component';
+import { ProductUpdateComponent } from './components/products/product-update/product-update.component';
+import { MovementComponent } from './components/balance/movement/movement.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -23,8 +27,12 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatInputModule } from "@angular/material/input";
-import { ProductsReadComponent } from './components/products/products-read/products-read.component';
-import { ProductUpdateComponent } from './components/products/product-update/product-update.component';
+import {MatTabsModule} from '@angular/material/tabs';
+import { MovementInputComponent } from './components/balance/movement-input/movement-input.component';
+import { MovementOutputComponent } from './components/balance/movement-output/movement-output.component';
+import { ThemesDirective } from './directives/themes.directive';
+import { MatMenuModule } from '@angular/material/menu';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +43,12 @@ import { ProductUpdateComponent } from './components/products/product-update/pro
     ProductsComponent,
     ProductsCreateComponent,
     ProductsReadComponent,
-    ProductUpdateComponent
+    ProductUpdateComponent,
+    BalanceComponent,
+    MovementComponent,
+    MovementInputComponent,
+    MovementOutputComponent,
+    ThemesDirective
   ],
   imports: [
     BrowserModule,
@@ -51,7 +64,8 @@ import { ProductUpdateComponent } from './components/products/product-update/pro
     MatFormFieldModule,
     MatInputModule,
     FormsModule,
-
+    MatTabsModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

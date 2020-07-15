@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { Product } from './components/products/model/product.model';
 import { HomeComponent } from './views/home/home.component';
 import { ProductsComponent } from './views/products/products.component';
 import { ProductsCreateComponent } from './components/products/products-create/products-create.component';
 import { ProductUpdateComponent } from './components/products/product-update/product-update.component';
-
+import { BalanceComponent } from "./views/balance/balance.component";
 const routes: Routes = [
   {
     path: "",
@@ -23,6 +22,10 @@ const routes: Routes = [
   {
     path: "products/update/:id",
     component: ProductUpdateComponent
+  },
+  {
+    path: "balance",
+    component: BalanceComponent
   }
 ];
 

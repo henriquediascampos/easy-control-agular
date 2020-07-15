@@ -1,0 +1,6 @@
+.flex-cascade {
+  display: flex;
+  * {
+    display: flex;
+  }
+}

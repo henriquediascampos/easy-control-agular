@@ -1,0 +1,32 @@
+.theme-white {
+  .primary {
+    background-color: $primary;
+    * {
+      color: #ffffff;
+    }
+    .material-icons {
+      cursor: pointer;
+      :hover {
+        color: #ffffffc4;
+      }
+    }
+  }
+  .primary-light {
+    background-color: $primary-light;
+    * {
+      color: #ffffff;
+    }
+  }
+  .secondary {
+    background-color: $secondary;
+  }
+  .secondary-light {
+    background-color: $secondary-light;
+  }
+}
+
+.theme-dark {
+  .primary {
+    background-color: rgb(78, 125, 255);
+  }
+}
